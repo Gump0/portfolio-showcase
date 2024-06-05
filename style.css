@@ -1,0 +1,30 @@
+/* General */
+
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+* {
+    margin: 1;
+    padding: 0;
+}
+
+body{
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85,85,85);
+}
+
+/* button transitions */
+
+a, .button {
+    transition: all 300ms ease;
+}
+
+/* Desktop Nav */
+ nav, nav-links
