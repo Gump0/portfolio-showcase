@@ -7,15 +7,13 @@
     padding: 0;
 }
 
-body{
+html, body{
    font-family: "Space Mono", monospace;
    font-optical-sizing: auto;
    font-weight: 400;
    background: radial-gradient(circle,#000200,#000014);
-}
-
-html{
-    scroll-behavior: smooth;
+   overflow: hidden;
+   scroll-behavior: smooth;
 }
 
 p {
@@ -27,10 +25,29 @@ p {
 a, .button {
     transition: all 300ms ease;
 }
+/* She looked at my watch too long, now she see stars (Blaow, blaow) */
+.twinkle-stars {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: transparent url('images/stars.svg') repeat;
+   animation: twinklingAnimation 10s linear infinite;
+   pointer-events: none;
+   z-index: -1;
+}
+
+@keyframes twinklingAnimation {
+   0% { background-position: 0 0;}
+   100% { background-position: -300px -300px; }
+}
 
 /* Desktop Nav */
  nav, nav-links {
     display: flex;
+    position: relative;
+    z-index: 1;
  }
 
  nav {
