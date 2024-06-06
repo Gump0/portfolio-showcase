@@ -17,6 +17,16 @@ body {
    scroll-behavior: smooth;
 }
 
+hr {
+   width: 65%;
+   margin: 15;
+   padding: 15;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: gray;
+}
+
 /* She looked at my watch too long, now she see stars (Blaow, blaow) */
 /* DO COOL BACKGROUND ANIMATION LATER*/
 
@@ -151,6 +161,14 @@ a:hover {
 
 .hamburger-icon span:first-child {
    transform: none;
+}
+
+/* About me section */
+#about-me {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: whitesmoke;
 }
 
 /* button-container*/
