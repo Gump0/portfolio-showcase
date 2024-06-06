@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- METADATA FOR SEARCH ENGINE STUFF :D-->
-        <meta name="keywords" content="programmer, coding, PC,console, c#, c++, c, OpenGL, Unity Engine, games developer, software developer, english, canada, canadian, sheridan student" />
-        <meta name="description" content="Candian game design student with a passion for game development" />
+    <meta name="keywords"
+        content="programmer, coding, PC,console, c#, c++, c, OpenGL, Unity Engine, games developer, software developer, english, canada, canadian, sheridan student" />
+    <meta name="description" content="Candian game design student with a passion for game development" />
 
 
     <!-- Standard HTML Config-->
@@ -13,18 +15,27 @@
 
 
     <!-- Links and required references!-->
-        <!-- CSS STYLESHEETS-->
+    <!-- CSS STYLESHEETS-->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-        <!-- Scripts-->
-        <!-- Image References-->
-        <link rel="icon" type="image/png" href="icons/gb-icon.png"> 
+    <!-- Scripts-->
+    <!-- Image References-->
+    <link rel="icon" type="image/png" href="icons/gb-icon.png">
 
 
 </head>
+
 <body>
-    <div class="twinkle-stars">
-    </div>
+    <section>
+        <div class="twinkle-stars1"></div>
+        <div class="twinkle-stars2"></div>
+        <div class="twinkle-stars3"></div>
+        <div class="twinkle-stars4"></div>
+        <div class="twinkle-stars5"></div>
+        <div class="twinkle-stars6"></div>
+        <div class="twinkle-stars7"></div>
+        <div class="twinkle-stars8"></div>
+    </section>
     <nav id="desktop-nav">
         <div class="logos">Gleb Belyakov</div>
         <div>
@@ -38,25 +49,34 @@
         <div class="logos">Gleb Belyakov</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            </div>
         </div>
-        <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        </div>
-    </div>
-    </nav> 
+    </nav>
 </body>
 
 <!-- First Divider-->
 <hr>
 <!-- First Divider-->
+
 <body>
-    <nav id="button-prompts">
-        
-    </nav>
+    <div class="button-container">
+        <button class="content-button" data-content="content1">Button 1</button>
+        <button class="content-button" data-content="content2">Button 2</button>
+        <button class="content-button" data-content="content3">Button 3</button>
+    </div>
+    <div class="content-container">
+        <div id="content1" class="content">Content for Button 1</div>
+        <div id="content2" class="content">Content for Button 2</div>
+        <div id="content3" class="content">Content for Button 3</div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
