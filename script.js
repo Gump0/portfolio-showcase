@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// const colors = ['#000012', '#4967fc', '#7a00ff', '#521344', '#002bff', '#29295c', '#5e8db2', '#df60e5', '#000012'];
-// const selfportrait = document.querySelector('.selfportrait');
+const colors = ['#000012', '#4967fc', '#7a00ff', '#521344', '#002bff', '#29295c'];
+const selfportrait = document.querySelector('.selfportrait');
 
-// function changeBorderColor() {
-//    selfportrait.style.borderColor = colors[Math.floor(Math.random() * colors.length)];
-// }
+function changeBorderColor() {
+   selfportrait.style.borderColor = colors[Math.floor(Math.random() * colors.length)];
+}
 
-// setInterval(changeBorderColor, 5000); // Change color every 5 seconds
+setInterval(changeBorderColor, 10); // Change color every 5 seconds
