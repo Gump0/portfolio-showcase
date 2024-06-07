@@ -42,24 +42,14 @@ a,
 }
 
 /* Desktop Nav */
-nav,
-nav-links {
-   display: flex;
-   position: relative;
-   z-index: 1;
-}
 
 nav {
+   display: flex;
+   z-index: 1;
    color: whitesmoke;
-   justify-content: space-evenly;
-   align-items: baseline;
+   justify-content: center;
+   align-items: center;
    height: 17vh;
-}
-
-.nav-links {
-   gap: 2rem;
-   list-style: none;
-   font-size: 1.5rem;
 }
 
 .selfportrait {
@@ -68,10 +58,58 @@ nav {
    margin-right: auto;
    justify-content: center;
    border-radius: 50%;
-   border: 1px solid whitesmoke;
-   border-radius: 4px;
    padding: 5px;
    width: 250px;
+   border: 2px solid var(--border-color);
+   /* Define border color using CSS variables */
+   transition: border-color 10s ease-in-out;
+   /* Transition the border color change over 1 second */
+}
+
+/* Define a keyframe animation to continuously shift the border color */
+@keyframes colorShift {
+   0% {
+      --border-color: #000012;
+      /* Initial color */
+   }
+   12.5% {
+      --border-color: #4967fc;
+      /* Midway color */
+   }
+   25% {
+      --border-color: #7a00ff;
+      /* Final color (same as initial for seamless transition) */
+   }
+   37.5% {
+      --border-color: #521344;
+      /* Initial color */
+   }
+   50% {
+      --border-color: #002bff;
+      /* Midway color */
+   }
+   62.5% {
+      --border-color: #29295c;
+      /* Final color (same as initial for seamless transition) */
+   }
+   75% {
+      --border-color: #5e8db2;
+      /* Initial color */
+   }
+   87.5% {
+      --border-color: #df60e5;
+      /* Midway color */
+   }
+   100% {
+      --border-color: #000012;
+      /* Final color (same as initial for seamless transition) */
+   }
+}
+
+/* Apply the animation to the image */
+.selfportrait {
+   animation: colorShift 5s linear infinite;
+   /* Apply the colorShift animation infinitely */
 }
 
 a {
@@ -104,15 +142,15 @@ a:hover {
 
 /* button-container*/
 
- .button-container {
+.button-container {
    margin-bottom: 20px;
    display: flex;
    justify-content: center;
- }
+}
 
-  /* FANCY RAINBOW BUTTON STUFF START */
+/* FANCY RAINBOW BUTTON STUFF START */
 
- .content-button {
+.content-button {
    padding: 1.6em 3em;
    border: none;
    outline: none;
@@ -127,46 +165,46 @@ a:hover {
    touch-action: manipulation;
    margin-left: 10px;
    margin-right: 10px;
- }
+}
 
- .content-button:before {
+.content-button:before {
    content: "";
-  background: linear-gradient(
-    45deg,
-    #000012,
-    #4967fc,
-    #7a00ff,
-    #521344,
-    #002bff,
-    #29295c
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
- }
+   background: linear-gradient(45deg,
+         #000012,
+         #4967fc,
+         #7a00ff,
+         #521344,
+         #002bff,
+         #29295c);
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   background-size: 400%;
+   z-index: -1;
+   filter: blur(5px);
+   -webkit-filter: blur(5px);
+   width: calc(100% + 4px);
+   height: calc(100% + 4px);
+   animation: glowing-button-85 20s linear infinite;
+   transition: opacity 0.3s ease-in-out;
+   border-radius: 10px;
+}
 
- @keyframes glowing-button-85 {
+@keyframes glowing-button-85 {
    0% {
-     background-position: 0 0;
+      background-position: 0 0;
    }
-   50% {
-     background-position: 400% 0;
-   }
-   100% {
-     background-position: 0 0;
-   }
- }
 
- .content-button::after {
+   50% {
+      background-position: 400% 0;
+   }
+
+   100% {
+      background-position: 0 0;
+   }
+}
+
+.content-button::after {
    z-index: -1;
    content: "";
    position: absolute;
@@ -176,11 +214,11 @@ a:hover {
    left: 0;
    top: 0;
    border-radius: 10px;
- }
+}
 
- /* FANCY RAINBOW BUTTON STUFF END */
+/* FANCY RAINBOW BUTTON STUFF END */
 
- .content-container .content {
+.content-container .content {
    margin-bottom: 20px;
    display: flex;
    justify-content: center;
@@ -193,4 +231,3 @@ a:hover {
    justify-content: center;
    color: whitesmoke;
 }
-
