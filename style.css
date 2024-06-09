@@ -201,7 +201,7 @@ a:hover {
    font-size: medium;
    display: flex;
    justify-content: center;
-   align-content: baseline;
+   align-content: center;
 }
 
 .content img {
@@ -216,7 +216,7 @@ a:hover {
 
 .city-swerving-txt {
    color: whitesmoke;
-   font-size: medium;
+   font-size: x-small;
    display: flex;
    justify-content: center;
    text-align: center;
