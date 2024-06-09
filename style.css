@@ -204,13 +204,24 @@ a:hover {
    align-content: center;
 }
 
+.video-container {
+   width: 45%;
+   max-width: 850px;
+   height: 45%;
+   padding-bottom: 1%;
+   position: relative;
+   /* display: flex; */
+   /* justify-content: center; */
+   /* align-items: center; */
+}
+
 .content img {
    display: block;
    margin-left: auto;
    margin-right: auto;
    justify-content: center;
    padding: 5px;
-   width: 50%;
+   width: 35%;
    border: 2px solid;
 }
 
