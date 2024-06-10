@@ -84,6 +84,28 @@ a:hover {
    cursor: default;
 }
 
+/* Social Media Links Section */
+
+.social-media {
+   display: flex;
+   justify-content: center;
+   gap: 10px; /* Space between the icons */
+}
+
+.social-media a {
+   display: inline-block;
+}
+
+.icon {
+   width: 40px; /* Adjust size as needed */
+   height: 40px; /* Adjust size as needed */
+   transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.icon:hover {
+   transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
 /* About me section */
 #about-me {
    display: flex;
