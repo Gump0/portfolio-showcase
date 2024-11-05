@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <!-- Standard HTML Config-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GLEB BELYAKOV</title>
+    
+    
+        <!-- Links and required references!-->
+        <!-- CSS STYLESHEETS-->
+        <link rel="stylesheet" href="../style.css" />
+
+        <!-- Scripts-->
+        <!-- Image References-->
+        <link rel="icon" type="image/png" href="icons/gb-icon.png">
+</head>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursorcircle"></div>
+<div class="cursorcircle"></div>
+<div class="cursorcircle"></div>
+<div class="cursorcircle"></div>
+<div class="cursorcircle"></div>
+<div class="cursorcircle"></div>
+<div class="cursorcircle"></div>
+<div class="cursorcircle"></div>
+<div class="cursorcircle"></div>
+<div class="cursorcircle"></div>
+
+<!-- 🐜 Antics GDC 2025 -->
+
+<body>
+        <div id="altpagecontent" class="altcontent">
+<div class="alttitle">  <h3><i>🐜 Antics GDC 2025</i></h3>  </div>
+<hr>
+        <img src="../images/anticsshowcasimage.png" style="width: 60%; display: block; margin: 0 auto;">
+        <hr>
+        <br>
+        <div class="altbodytext">
+                <h3>🚧 Currently In Development 🚧</h3>
+                <p>
+                        <i>A co-op local multiplayer game where players fight for their colony's survival! 
+                        Created as a submission to <b>GDC’s</b> <i>ALT CTRL 2025</i> competition. 
+                <br>
+                <br>    
+                        Introducing <b>Antics!</b> A two versus two co-op fighting game. 
+                        Where two players are charged with controlling a tank <i>(one gunner and one driver)</i>, 
+                        both players must work together to annihilate the enemy team's tank and claim all the food for your colony! 
+                <br>
+                <br>
+                        As a programmer and technical designer on the team, 
+                        I was tasked with prototyping and implementing various in-game systems, 
+                        user-interfaces and custom graphic shaders.
+                </p>
+        </div>
+        <hr>
+        <div class="altimagegrid">
+                <div class="video-container">
+                        <div style="padding-bottom: 75%; position: relative;"><iframe id="odysee-iframe" style="position: absolute; top: 2em;width: 30em; height: 20em;" width="100%" height="100%" src="https://odysee.com/$/embed/@Gump:2/TankUIDemo:3?r=Gt5FyuFKUcy7GaeeMdaRtyykZC1nNjP2&signature=759c6f232f01c797ca9ac50a632d6d4370adaf8af861a07b94b9901f307791976decbcea175ba7cda846e91bb21abda11a17941bc9ef0549cd7722f8d4f18137&signature_ts=1730769890" allowfullscreen></iframe></div>
+                </div>
+                <img src="../images/anitcsss1.png">
+        </div>
+        <hr>
+</div>
+        <div class="altbodytext">
+                <h3>User Interface 🖥️</h3>
+                <p>
+                        One of the many systems I have created for the project, and one that I am personally proud of is the user interface for both players. 
+                        Specifically, the driver’s user interface. 
+                </p>
+                <p>
+                        As the driver, the player oversees managing accelerating, steering and operating the tanks <i>manual transmission</i>. 
+                        To fulfill your role as a driver, you must be able to react based off the information from the game. 
+                </p>
+                <br>
+                <p>
+                        <i>Sooo</i>, of course my solution is creating a user-interface system for the driver player. Where velocity, 
+                        engine speed and gearing is visualized in the video above. 
+                        Eventually turning into the UI system present in-game!
+                        Communicating data and relaying information cohesively with the games built-in <b>tank controller</b>.
+                </p>
+        </div>
+        <hr>
+        <div class="altimagegrid">
+                <img src="../images/ShaderShowcase.GIF">
+                <p>🖼️ Shader Script!</p>
+        </div>
+        <div class="altimagegrid">
+                <p>Before 🔨</p>
+                <img src="../images/BeforeShaders.png">
+                <img src="../images/AfterShaders.png">
+                <p>After 🏠</p>
+        </div>
+        <hr>
+        <div class="altbodytext">
+                <h4>URP Shader Script</h4>
+                <p>
+                        Towards the end of production, personally I was not satisfied with the look of the game. 
+                        As collectively we wanted the game to have a more saturated, fluorescent childlike cartoon aesthetic. Considering this, 
+                        I’ve created an unlit shader script that modifies the Unity render pipeline (<b>URP</b>). 
+                        Using Unity's built in HLSL shader scripting support.
+                </p>
+                <br>
+                <h4>In-game VFX</h4>
+                <img src="../images/VFX.gif">
+                <p>
+                        Environment VFX using a combination of Unity’s built-in particle system, HLSL (High Level Shader Language) 
+                        and <b>C#</b> 
+                </p>
+                <br>
+                <br>
+        </div>
+
+        <script src="../script.js"></script>
+</body>
