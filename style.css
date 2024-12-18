@@ -455,3 +455,28 @@ a:hover {
    text-align: center;
    margin: auto 0;
 }
+
+/* TECHNICAL SKILLS SECTION */
+.skillsicons {
+   display: flex;
+   justify-content: center;
+   color: whitesmoke;
+   text-align: center;
+}
+
+.skillsicons img {
+   border: none;
+   width: 6em;
+   height: 6em;
+}
+
+.skillsicons .minicon {
+   border: none;
+   width: 4.5em;
+   height: 4.5em;
+   transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.minicon:hover {
+   transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}

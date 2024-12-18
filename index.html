@@ -55,9 +55,10 @@
         <a href="mailto:gleb.belyakov04@gmail.com">
             <img src="icons/mail.png" alt="Email" class="icon">
         </a>
-        <a href="https://github.com/Gump0/portfolio-showcase" target="_blank">
+        <!-- Having source code linked is kinda pointless and confusing... -->
+        <!-- <a href="https://github.com/Gump0/portfolio-showcase" target="_blank">
             <img src="icons/sourcecode.png" alt="Website Source Code" class="icon">
-        </a>
+        </a> -->
     </div>
 
 <!-- First Divider-->
@@ -73,11 +74,14 @@
 <body>
     <div class="button-container">
         <button class="content-button" data-content="content1">Projects</button>
-        <button class="content-button" data-content="content2">Skills & Education</button>
-        <!-- <button class="content-button" data-content="content3">Resume / CV</button> -->
+        <button class="content-button" data-content="content2">Technical Skills</button>
+        <!-- <button class="content-button" data-content="content3">About Me</button> -->
     </div>
     <div class="content-container">
         <div id="content1" class="content">
+        <!-- -------------------------- -->
+        <!-- PORTFOLIO PROJECTS SECTION -->
+        <!-- -------------------------- -->
             <div id="tiles" class="tiles">
                 <!-- Button One -->
                 <div class="tile">
@@ -112,141 +116,87 @@
                 </div> -->
             </div>
         </div>
+        <!-- ------------------------ -->
+        <!-- TECHNICAL SKILLS SECTION -->
+        <!-- ------------------------ -->
         <div id="content2" class="content">
-            <h1><b>Education</b></h1>
-            <hr>
-            <h2><b>Sheridan College</b></h2>
-            <p>
-                <h4>Honours Bachelor of Game Design</h4>
-                <h7>2022-2026</h7>
-                Actively studying game design at Sheridan College (Trafalgar Campus), 
-                specializing in <b>programming and game scripting.</b>
-            </p>
-            <hr>
-            <h2><b>Ontario Secondary School Diploma</b></h2>
-            <p>
-                <h4>OSSD</h4>
-                <h7>2018-2020</h7>
-                <i>OSSD obtained as a consistent honours student</i>
-            </p>
-            <hr>
+            <!-- PROGRAMMING LANGUAGES -->
+            <div id="techskillstitle" class="altbodytext">
+                <h1><b>Technical Skills</b></h1>
+            </div>
             <br>
             <br>
-            <h1><b>Skills</b></h1>
-            <h2><b>Programming Languages</b></h2>
-            <div class="chart-parent chart chart-bar chart-horizontal">
-                <div class="metric" style="width: 37.5%">
-                    C#
-                    <span class="metric-value">75</span>
-                </div>
-                <div class="metric" style="width: 35%">
-                    Python
-                    <span class="metric-value">70</span>
-                </div>
-                <div class="metric" style="width: 32.5%">
-                    Bash
-                    <span class="metric-value">65</span>
-                </div>
-                <div class="metric" style="width: 32.5%">
-                    LUA
-                    <span class="metric-value">65</span>
-                </div>
-                <div class="metric" style="width: 30%">
-                    C++
-                    <span class="metric-value">60</span>
-                </div>
-                <div class="metric" style="width: 30%">
-                    Java
-                    <span class="metric-value">60</span>
-                </div>
-                <div class="metric" style="width: 30%">
-                    Shell
-                    <span class="metric-value">60</span>
-                </div>
-                <div class="metric" style="width: 27.5%">
-                    HTML
-                    <span class="metric-value">55</span>
-                </div>
-                <div class="metric" style="width: 27.5%">
-                    CSS
-                    <span class="metric-value">55</span>
-                </div>
+            <br>
+            <div id="languages" class="altbodytext"> 
+                <h2><b>Programming Languages</b></h2>
             </div>
-        <hr>
-            <h2><b>Game Engines & Frameworks</b></h2>
-            <div class="chart-parent chart chart-bar chart-horizontal">
-                <div class="metric" style="width: 37.5%">
-                    Unity
-                    <span class="metric-value">75</span>
-                </div>
-                <div class="metric" style="width: 30%">
-                    LÖVE
-                    <span class="metric-value">60</span>
-                </div>
-                <div class="metric" style="width: 27.5%">
-                    Unreal Engine 5
-                    <span class="metric-value">55</span>
-                </div>
-                <div class="metric" style="width: 25%">
-                    Godot
-                    <span class="metric-value">50</span>
-                </div>
-                <div class="metric" style="width: 25%">
-                    Twine
-                    <span class="metric-value">50</span>
-                </div>
+
+            <br>
+            <!-- BIG ICONS -->
+            <div id="techskillsicons" class="skillsicons">
+                <img src="../icons/cslogo.png" alt="C#" class="icon">
+                <img src="../icons/cpplogo.png" alt="C++" class="icon">
+                <img src="../icons/bash-logo.png" alt="Bash Shell Script" class="icon">
+                <img src="../icons/OpenGL.png" alt="OpenGL" class="icon">
+                <img src="../icons/python.png" alt="Python" class="icon">
+                <img src="../icons/lua-logo.png" alt="LUA" class="icon">
+                <img src="../icons/java-logo.png" alt="Java" class="icon">
             </div>
-        <hr>
-            <h2><b>Other Tools</b></h2>
-            <div class="chart-parent chart chart-bar chart-horizontal">
-                <div class="metric" style="width: 37.5%">
-                    Visual Studio
-                    <span class="metric-value">75</span>
-                </div>
-                <div class="metric" style="width: 37.5%">
-                    Linux
-                    <span class="metric-value">75</span>
-                </div>
-                <div class="metric" style="width: 37.5%">
-                    Microsoft Windows
-                    <span class="metric-value">75</span>
-                </div>
-                <div class="metric" style="width: 35%">
-                    Git
-                    <span class="metric-value">70</span>
-                </div>
-                <div class="metric" style="width: 35%">
-                    Trello
-                    <span class="metric-value">70</span>
-                </div>
-                <div class="metric" style="width: 32.5%">
-                    Miro
-                    <span class="metric-value">65</span>
-                </div>
-                <div class="metric" style="width: 30%">
-                    Adobe Suite
-                    <span class="metric-value">60</span>
-                </div>
-                <div class="metric" style="width: 27.5%">
-                    Eclipse
-                    <span class="metric-value">55</span>
-                </div>
-                <div class="metric" style="width: 25%">
-                    Blender
-                    <span class="metric-value">50</span>
-                </div>
-                <div class="metric" style="width: 20%">
-                    macOS
-                    <span class="metric-value">40</span>
-                </div>
-                <div class="metric" style="width: 20%">
-                    Maya
-                    <span class="metric-value">40</span>
-                </div>
+            <br>
+            <!-- SMALL ICONS -->
+            <div id="techskillsicons" class="skillsicons">
+                <img src="../icons/HTML-Logo.png" alt="HTML5" class="icon">
+                <img src="../icons/css-logo.png" alt="CSS" class="icon">
+                <img src="../icons/js-logo.png" alt="JavaScript (The Other Java)" class="icon">
             </div>
-        </div>
-        <!-- <div id="content3" class="content">Content for Button 3</div> -->
+            <br>
+            <hr>
+            <!-- ENGINES AND FRAMWORKS -->
+            <div id="languages" class="altbodytext"> 
+                <h2><b>Engines & Frameworks</b></h2>
+            </div>
+
+            <br>
+
+            <div id="techskillsicons" class="skillsicons">
+                <img src="../icons/unitylogo.png" alt="Unity Engine" class="icon">
+                <img src="../icons/unreal-logo.png" alt="Unreal Engine 5" class="icon">
+                <img src="../icons/godot-logo.png" alt="Godot Engine" class="icon">
+            </div>
+
+            <div id=""techskillsicons" class="skillsicons">
+                <img src="../icons/dotnet-fw.png" alt="Microsoft .NET Framework" class="icon">
+                <img src="../icons/love2d.png" alt="LÖVE Engine" class="icon">
+                <img src="../icons/mirror-icon.png" alt="Mirror" class="icon">
+            </div>
+            <br>
+            <br>
+            <br>
+            <!-- DEV/MISC TOOLS -->
+            <!-- <div class="altbodytext"> 
+                <h2><b>Development Tools</b></h2>
+            </div>
+
+            <br>
+
+            <div id="techskillsicons" class="skillsicons">
+                <img src="../icons/cpplogo.png" alt="C++" class="icon">
+                <img src="../icons/gitlogo.png" alt="Git" class="icon">
+            </div> -->
+            <br>
+            <br>
     </div>
+    <!-- ---------------- -->
+    <!-- ABOUT ME SECTION -->
+    <!-- ---------------- -->
+    <!-- <div id="content3" class="content">
+
+        <div class="altbodytext"> 
+            <h2><b>Programming Languages</b></h2>
+        </div>
+        
+    </div> -->
+
     <script src="script.js"></script>
 </body>
 </html>

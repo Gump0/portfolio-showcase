@@ -1,3 +1,7 @@
+///////////////////////////
+// Content Button Logic //
+/////////////////////////
+
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.content-button');
     const contents = document.querySelectorAll('.content');
@@ -81,3 +85,22 @@ function animateCircles() {
 }
 
 animateCircles();
+
+//////////////////////////////////
+// Technical Skills Text Logic //
+////////////////////////////////
+var languageText = document.getElementById("techskillstitle"); //language text
+var originalText = languageText.innerHTML; //og language text
+var images = document.getElementsByClassName("icon"); //icon references
+
+for (var i = 0; i < images.length; i++) {
+  images[i].addEventListener("mouseover", function() {
+      // Change the text to the alt tag of the hovered image
+      languageText.innerHTML = `<h1><b>${this.alt}</b></h1>`;
+  });
+
+  images[i].addEventListener("mouseout", function() {
+      // Revert back to the original text when the mouse leaves the image
+      languageText.innerHTML = originalText;
+  });
+}
