@@ -460,22 +460,40 @@ a:hover {
 .skillsicons {
    display: flex;
    justify-content: center;
+   flex-wrap: wrap; /* Ensures icons wrap onto the next line on small screens */
    color: whitesmoke;
    text-align: center;
-}
-
-.skillsicons img {
+   gap: 1em; /* Adds spacing between icons */
+ }
+ 
+ .skillsicons img {
    border: none;
    width: 6em;
    height: 6em;
-}
-
-.skillsicons .minicon {
+ }
+ 
+ .skillsicons .minicon {
    border: none;
    width: 4.5em;
    height: 4.5em;
    transition: transform 0.2s; /* Smooth hover effect */
-}
+ }
+/* Small Displays */
+ @media (max-width: 768px) {
+   .skillsicons img,
+   .skillsicons .minicon {
+     width: 4em;
+     height: 4em;
+   }
+ }
+ /* Even Smaller Displays :) */
+ @media (max-width: 480px) {
+   .skillsicons img,
+   .skillsicons .minicon {
+     width: 3em;
+     height: 3em;
+   }
+ }
 
 .minicon:hover {
    transform: scale(1.1); /* Slightly enlarge the icon on hover */
