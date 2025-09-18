@@ -1,513 +1,509 @@
 /* General */
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 * {
-   margin: 1;
-   padding: 0;
+    margin: 1;
+    padding: 0;
 }
 
 html,
 body {
-   font-family: "Space Mono", monospace;
-   font-optical-sizing: auto;
-   font-weight: 400;
-   background: radial-gradient(circle, #000200, #000014);
-   overflow: auto;
-   scroll-behavior: smooth;
+    font-family: "Space Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    background: radial-gradient(circle, #000200, #000014);
+    overflow: auto;
+    scroll-behavior: smooth;
 }
 
 hr {
-   width: 65%;
-   margin: 15;
-   padding: 15;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   color: gray;
+    width: 40%;
+    margin: 15;
+    padding: 15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: gray;
 }
 
 /* She looked at my watch too long, now she see stars (Blaow, blaow) */
 /* DO COOL BACKGROUND ANIMATION LATER*/
 
 p {
-   color: whitesmoke;
+    color: whitesmoke;
 }
 
 /* button transitions */
 
 a,
 .button {
-   transition: all 300ms ease;
+    transition: all 300ms ease;
 }
 
 /* Desktop Nav */
 
 nav {
-   display: flex;
-   z-index: 1;
-   color: whitesmoke;
-   justify-content: center;
-   align-items: center;
-   height: 17vh;
+    display: flex;
+    z-index: 1;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    height: 17vh;
 }
 
 .selfportrait {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   justify-content: center;
-   border-radius: 50%;
-   padding: 5px;
-   width: 250px;
-   border: 2px solid;
-   transition: border-color 0.3s ease-in-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 5px;
+    width: 250px;
+    border: 2px solid;
+    transition: border-color 0.3s ease-in-out;
 }
 
 a {
-   color: whitesmoke;
-   text-decoration: none;
-   text-decoration-color: whitesmoke;
+    color: whitesmoke;
+    text-decoration: none;
+    text-decoration-color: whitesmoke;
 }
 
 a:hover {
-   color: #4967fc;
-   text-decoration: wavy;
-   text-underline-offset: 1rem;
+    color: #4967fc;
+    text-decoration: wavy;
+    text-underline-offset: 1rem;
 }
 
 .logos {
-   font-size: 2rem;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .logo:hover {
-   cursor: default;
+    cursor: default;
 }
 
 /* Social Media Links Section */
 
 .social-media {
-   display: flex;
-   justify-content: center;
-   gap: 10px; /* Space between the icons */
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between the icons */
 }
 
 .social-media a {
-   display: inline-block;
+    display: inline-block;
 }
 
 .icon {
-   width: 40px; /* Adjust size as needed */
-   height: 40px; /* Adjust size as needed */
-   transition: transform 0.2s; /* Smooth hover effect */
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    transition: transform 0.2s; /* Smooth hover effect */
 }
 
 .icon:hover {
-   transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
 }
 
 /* About me section */
 #about-me {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: whitesmoke;
 }
 
 /* button-container*/
 
 .button-container {
-   margin-bottom: 20px;
-   display: flex;
-   justify-content: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 /* FANCY RAINBOW BUTTON STUFF START */
 
 .content-button {
-   padding: 1.6em 3em;
-   border: none;
-   outline: none;
-   color: rgb(255, 255, 255);
-   background: #111;
-   cursor: pointer;
-   position: relative;
-   z-index: 0;
-   border-radius: 10px;
-   user-select: none;
-   -webkit-user-select: none;
-   touch-action: manipulation;
-   margin-left: 10px;
-   margin-right: 10px;
-   transition: transform 0.3s;
+    padding: 1.6em 3em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform 0.3s;
 }
 
 .content-button:before {
-   content: "";
-   background: linear-gradient(45deg,
-         #000012,
-         #4967fc,
-         #7a00ff,
-         #521344,
-         #002bff,
-         #29295c);
-   position: absolute;
-   top: -2px;
-   left: -2px;
-   background-size: 400%;
-   z-index: -1;
-   filter: blur(5px);
-   -webkit-filter: blur(5px);
-   width: calc(100% + 4px);
-   height: calc(100% + 4px);
-   animation: glowing-button-85 20s linear infinite;
-   transition: opacity 0.3s ease-in-out;
-   border-radius: 10px;
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #000012,
+        #4967fc,
+        #7a00ff,
+        #521344,
+        #002bff,
+        #29295c
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
 }
 
 @keyframes glowing-button-85 {
-   0% {
-      background-position: 0 0;
-   }
+    0% {
+        background-position: 0 0;
+    }
 
-   50% {
-      background-position: 400% 0;
-   }
+    50% {
+        background-position: 400% 0;
+    }
 
-   100% {
-      background-position: 0 0;
-   }
+    100% {
+        background-position: 0 0;
+    }
 }
 
 .content-button::after {
-   z-index: -1;
-   content: "";
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   background: #222;
-   left: 0;
-   top: 0;
-   border-radius: 10px;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
 }
 
 .content-button:hover {
-   transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 /* FANCY RAINBOW BUTTON STUFF END */
 
 .content-container .content {
-   margin-bottom: 20px;
-   display: flex;
-   justify-content: center;
-   display: none;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    display: none;
 }
 
 .content-container .content.active {
-   margin-bottom: 20px;
-   display: flex;
-   color: whitesmoke;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
+    margin-bottom: 20px;
+    display: flex;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Content formatting */
 
 .content-title {
-   color: whitesmoke;
-   font-size: x-large;
-   font-family: "Space Mono", bold;
-   text-align: center;
+    color: whitesmoke;
+    font-size: x-large;
+    font-family: "Space Mono", bold;
+    text-align: center;
 }
 
 .content {
-   color: whitesmoke;
-   font-size: medium;
-   display: flex;
-   justify-content: center;
-   align-content: center;
+    color: whitesmoke;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .video-container {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: relative;
-   overflow: hidden;
-   width: 40%;
-   margin: auto;
-   aspect-ratio: 16 / 9;
- }
- 
- .video-container iframe {
-   width: 100%; /* Make iframe fill the container */
-   height: 100%; /* Maintain proportions */
-   border: none; /* Optional: Remove border */
-   display: block; /* Ensures it's treated as a block element */
- }
+    width: 50rem;
+    height: auto;
+    margin: auto;
+    aspect-ratio: 16 / 9;
+}
 
- @media (max-width: 768px) {
-   .video-container {
-     width: 55%; /* Larger width for smaller screens */
-   }
- }
- 
- @media (min-width: 1200px) {
-   .video-container {
-     width: 45%; /* Smaller width for larger screens */
-   }
- }
+.video-container iframe {
+    width: 100%; /* Make iframe fill the container */
+    height: 100%; /* Maintain proportions */
+    border: none; /* Optional: Remove border */
+    display: block; /* Ensures it's treated as a block element */
+}
+
+@media (max-width: 768px) {
+    .video-container {
+        width: 80%; /* Larger width for smaller screens */
+    }
+}
 
 .content img {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   justify-content: center;
-   padding: 5px;
-   width: 35%;
-   border: 2px solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding: 5px;
+    width: 35%;
+    border: 2px solid;
 }
 
 .city-swerving-txt {
-   color: whitesmoke;
-   font-size: x-small;
-   display: flex;
-   justify-content: center;
-   text-align: center;
+    color: whitesmoke;
+    font-size: x-small;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 /* SKILLS CHART */
 
-.chart_parent
-{
-   border: 2px dotted white;
-   display: flex;
-   flex-direction: column;
-   align-items: center;  /* Center contents horizontally */
-   justify-content: center; /* Center contents vertically if necessary */
+.chart_parent {
+    border: 2px dotted white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center contents horizontally */
+    justify-content: center; /* Center contents vertically if necessary */
 }
-.chart .metric 
-{
-  background-color: rgba(255, 255, 255, 0);
-  background: rgba(255, 255, 255, 0);
-  color: white;
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
-  border-radius: 3px;
-  padding: 10px;
-  text-align: left;
-  box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.6);
+.chart .metric {
+    background-color: rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    padding: 10px;
+    text-align: left;
+    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
 .chart .metric .metric-value {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .chart-horizontal {
-  width: 100%;
-  display: flex;
-  flex-direction: column; /* Enable vertical stacking */
-  align-items: center; /* Center contents horizontally */
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Enable vertical stacking */
+    align-items: center; /* Center contents horizontally */
 }
 
 .chart-horizontal .metric {
-  margin-bottom: 3px;
-  min-width: 100px;
-  padding: 6px 15px;
+    margin-bottom: 3px;
+    min-width: 100px;
+    padding: 6px 15px;
 }
 
 .chart-horizontal .metric .metric-value {
-  float: right;
-  font-weight: bold;
+    float: right;
+    font-weight: bold;
 }
 
-#tiles { 
-   display: -moz-flex;
-   display: -webkit-flex;
-   display: -ms-flex;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   width: 75%;
-   height: 75%;
+#tiles {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 75%;
 }
 
-.tile { 
-   margin: 1vh;
-   width: 100%;
-   max-width: 24em;
-   aspect-ratio: 1; /* Enforce square shape */
-   background-color: #111;
-   border-width: 3em;
-   border-radius: 4em;
-   overflow: hidden;
-   backface-visibility: hidden;
-   transform-style: preserve-3d;
-   /* tile border */
-   border: 0.25em solid;
-   border-color: white;
-   transition: border-color 0.3s ease-in-out, transform 0.3s; /*Handles transitions for both border color fade and hover transition*/
+.tile {
+    margin: 1vh;
+    width: 100%;
+    max-width: 24em;
+    aspect-ratio: 1; /* Enforce square shape */
+    background-color: #111;
+    border-width: 3em;
+    border-radius: 4em;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    /* tile border */
+    border: 0.25em solid;
+    border-color: white;
+    transition:
+        border-color 0.3s ease-in-out,
+        transform 0.3s; /*Handles transitions for both border color fade and hover transition*/
 }
 
-.tile:hover { 
-   transform: scale(1.05);
+.tile:hover {
+    transform: scale(1.05);
 }
 
 .tile img {
-   left: -0.5vh;
-   top: -0.5vh;
-   border:0;
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   position: absolute;
-   transition: opacity 0.3s ease;
+    left: -0.5vh;
+    top: -0.5vh;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: opacity 0.3s ease;
 }
 
 .tile:hover img {
-   opacity: 0.15;
- }
+    opacity: 0.15;
+}
 
 /* Tile Text */
 .tile p {
-   margin-top: 45%;
-   font-size: 30px;
-   text-align: center;
-   color: whitesmoke;
+    margin-top: 45%;
+    font-size: 30px;
+    text-align: center;
+    color: whitesmoke;
 }
 
 @media (max-width: 768px) {
-   .tile p {
-      font-size: 20px; /*Adjust font size for smaller screens*/
-   }
+    .tile p {
+        font-size: 20px; /*Adjust font size for smaller screens*/
+    }
 }
 
 /*Custom Cursor Styling*/
-.cursorcircle { 
-   height: 24px;
-   width: 24px;
-   border-radius: 24px;
-   background-color: aliceblue;
-   position: absolute;
-   top: -48;
-   left: -48;
-   pointer-events: none;
-   z-index: 100;
+.cursorcircle {
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: aliceblue;
+    position: absolute;
+    top: -48;
+    left: -48;
+    pointer-events: none;
+    z-index: 100;
 }
 
 /* ALT PAGES STUFF */
-.altcontent { 
-   color: whitesmoke;
-   text-align: center;
+.altcontent {
+    color: whitesmoke;
+    text-align: center;
 }
 
 .alttitle {
-   text-align: center;
-   color: whitesmoke;
-   font-size: 3em;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3em;
 }
 
 .altbodytext {
-   width: 60%;
-   margin: 0 auto;
-   text-align: center;
-   color: whitesmoke;
-   font-size: 1.25em;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.25em;
 }
 
 /* Stand Alone Image */
 
-.standaloneimage { 
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: auto;
+.standaloneimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 .standaloneimage img {
-   object-fit: cover;
-   max-width: 50%;
-   max-height: 50%;
-   width: auto;
-   height: auto;
+    width: 50rem;
+}
+
+@media (max-width: 768px) {
+    .standaloneimage img {
+        width: 28rem;
+    }
 }
 
 /* Image Grid */
 
-.altimagegrid { 
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   gap: 10px;
-   width: 65%;
-   margin: 0 auto;
+.altimagegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 65%;
+    margin: 0 auto;
 }
 
 .altimagegrid img {
-   width: 100%;
-   height: auto;
-   max-width: 100%;
-   object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
 }
 
-.altimagegrid p { 
-   font-size: clamp(1em, 2.5vw, 3em);
-   text-align: center;
-   margin: auto 0;
+.altimagegrid p {
+    font-size: clamp(1em, 2.5vw, 3em);
+    text-align: center;
+    margin: auto 0;
 }
 
 /* TECHNICAL SKILLS SECTION */
 .skillsicons {
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap; /* Ensures icons wrap onto the next line on small screens */
-   color: whitesmoke;
-   text-align: center;
-   gap: 1em; /* Adds spacing between icons */
- }
- 
- .skillsicons img {
-   border: none;
-   width: 6em;
-   height: 6em;
- }
- 
- .skillsicons .minicon {
-   border: none;
-   width: 4.5em;
-   height: 4.5em;
-   transition: transform 0.2s; /* Smooth hover effect */
- }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures icons wrap onto the next line on small screens */
+    color: whitesmoke;
+    text-align: center;
+    gap: 1em; /* Adds spacing between icons */
+}
+
+.skillsicons img {
+    border: none;
+    width: 6em;
+    height: 6em;
+}
+
+.skillsicons .minicon {
+    border: none;
+    width: 4.5em;
+    height: 4.5em;
+    transition: transform 0.2s; /* Smooth hover effect */
+}
 /* Small Displays */
- @media (max-width: 768px) {
-   .skillsicons img,
-   .skillsicons .minicon {
-     width: 4em;
-     height: 4em;
-   }
- }
- /* Even Smaller Displays :) */
- @media (max-width: 480px) {
-   .skillsicons img,
-   .skillsicons .minicon {
-     width: 3em;
-     height: 3em;
-   }
- }
+@media (max-width: 768px) {
+    .skillsicons img,
+    .skillsicons .minicon {
+        width: 4em;
+        height: 4em;
+    }
+}
+/* Even Smaller Displays :) */
+@media (max-width: 480px) {
+    .skillsicons img,
+    .skillsicons .minicon {
+        width: 3em;
+        height: 3em;
+    }
+}
 
 .minicon:hover {
-   transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
 }
 /* FOR ITCH.IO EMBED */
 .iframe-container {
-   justify-content: center;
-   position: relative;
-   width: 100%;
-   max-width: 552px;
-   height: 0;
-   padding-bottom: 30.25%;
-   overflow: hidden;
-   margin: 0 auto;
- }
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 552px;
+    height: 0;
+    padding-bottom: 30.25%;
+    overflow: hidden;
+    margin: 0 auto;
+}
