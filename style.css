@@ -15,6 +15,29 @@ body {
     background: radial-gradient(circle, #000200, #000014);
     overflow: auto;
     scroll-behavior: smooth;
+    position: relative;
+}
+
+/* CONSTELLATION BACKGROUND */
+#constellation-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#constellation-bg canvas {
+    width: 100%;
+    height: 100%;
+}
+
+/* Ensure all content is above the background */
+body > *:not(#constellation-bg) {
+    position: relative;
+    z-index: 1;
 }
 
 hr {
@@ -26,9 +49,6 @@ hr {
     align-items: center;
     color: gray;
 }
-
-/* She looked at my watch too long, now she see stars (Blaow, blaow) */
-/* DO COOL BACKGROUND ANIMATION LATER*/
 
 p {
     color: whitesmoke;
