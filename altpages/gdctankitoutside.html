@@ -6,27 +6,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>GLEB BELYAKOV</title>
-    
-    
+
+
         <!-- Links and required references!-->
         <!-- CSS STYLESHEETS-->
         <link rel="stylesheet" href="../style.css" />
 
         <!-- Image References-->
-        <link rel="icon" type="image/png" href="icons/gb-icon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="icons/gb-icon.png" />
 </head>
 
-<!-- CUSTOM CURSOR -->
-<div class="cursorcircle"></div>
-<div class="cursorcircle"></div>
-<div class="cursorcircle"></div>
-<div class="cursorcircle"></div>
-<div class="cursorcircle"></div>
-<div class="cursorcircle"></div>
-<div class="cursorcircle"></div>
-<div class="cursorcircle"></div>
-<div class="cursorcircle"></div>
-<div class="cursorcircle"></div>
+<!-- CONSTELLATION BACKGROUND -->
+<div id="constellation-bg"></div>
 
 <!-- 🐜 Antics GDC 2025 -->
 
@@ -44,14 +35,12 @@
         <img src="../icons/unitylogo.png" alt="Unity" class="icon">
         <img src="../icons/gitlogo.png" alt="Git" class="icon">
         <img src="../icons/hlsl.jpg" alt="HLSL" class="icon">
-        <img src="../icons/OpenGL.png" alt="OpenGL" class="icon">
         <img src="../icons/pslogo.png" alt="Adobe PhotoShop" class="icon">
 
 </div>
 <hr>
-        <!-- <img src="../images/anticsshowcasimage.png" style="width: 60%; display: block; margin: 0 auto;"> -->
         <div class="video-container">
-                <iframe id="odysee-iframe" 
+                <iframe id="odysee-iframe"
                 src="https://odysee.com/$/embed/@Gump:2/antics:e?r=Gt5FyuFKUcy7GaeeMdaRtyykZC1nNjP2" allowfullscreen>
                 </iframe>
         </div>
@@ -59,17 +48,17 @@
         <br>
         <div class="altbodytext">
                 <p>
-                        <i>A co-op local multiplayer game where players fight for their colony's survival! 
-                        Created as a submission to <b>GDC’s</b> <i>ALT CTRL 2025</i> competition. 
-                <br>
-                <br>    
-                        Introducing <b>Antics!</b> A two versus two co-op fighting game. 
-                        Where two players are charged with controlling a tank <i>(one gunner and one driver)</i>, 
-                        both players must work together to annihilate the enemy team's tank and claim all the food for your colony! 
+                        <i>A co-op local multiplayer game where players fight for their colony's survival!
+                        Created as a submission to <b>GDC’s</b> <i>ALT CTRL 2025</i> competition.
                 <br>
                 <br>
-                        As a programmer and technical designer on the team, 
-                        I was tasked with prototyping and implementing various in-game systems, 
+                        Introducing <b>Antics!</b> A two versus two co-op fighting game.
+                        Where two players are charged with controlling a tank <i>(one gunner and one driver)</i>,
+                        both players must work together to annihilate the enemy team's tank and claim all the food for your colony!
+                <br>
+                <br>
+                        As a programmer and technical designer on the team,
+                        I was tasked with prototyping and implementing various in-game systems,
                         user-interfaces and custom graphic shaders.
                 </p>
         </div>
@@ -83,22 +72,22 @@
         <div class="altbodytext">
                 <h3>User Interface 🖥️</h3>
                 <p>
-                        One of the many systems I have created for the project, and one that I am personally proud of is the user interface for both players. 
-                        Specifically, the driver’s user interface. 
+                        One of the many systems I have created for the project, and one that I am personally proud of is the user interface for both players.
+                        Specifically, the driver’s user interface.
                 </p>
                 <p>
-                        As the driver, the player oversees managing accelerating, steering and operating the tanks <i>manual transmission</i>. 
-                        To fulfill your role as a driver, you must be able to react based off the information from the game. 
+                        As the driver, the player oversees managing accelerating, steering and operating the tanks <i>manual transmission</i>.
+                        To fulfill your role as a driver, you must be able to react based off the information from the game.
                 </p>
                 <p>
-                        <i>Sooo</i>, of course my solution is creating a user-interface system for the driver player. Where velocity, 
-                        engine speed and gearing is visualized in the video below. 
+                        <i>So</i>, of course my solution is creating a user-interface system for the driver player. Where velocity,
+                        engine speed and gearing is visualized in the video below.
                         Eventually turning into the UI system present in-game!
                         Communicating data and relaying information cohesively with the games built-in <b>tank controller</b>.
                 </p>
         </div>
         <div class="video-container">
-                <iframe id="odysee-iframe" 
+                <iframe id="odysee-iframe"
                 src="https://odysee.com/$/embed/@Gump:2/TankUIDemo:3?r=Gt5FyuFKUcy7
                 GaeeMdaRtyykZC1nNjP2&signature=759c6f232f01c797ca9ac50a632d6d4370ada
                 f8af861a07b94b9901f307791976decbcea175ba7cda846e91bb21abda11a17941bc9
@@ -106,7 +95,7 @@
                 </iframe>
         </div>
         <hr>
-        <div class = altbodytext> <h3>🖼️ Graphics/Shader Programming </h3> </div>
+        <div class = altbodytext> <h3>Graphics/Shader Programming </h3> </div>
         <div class="altimagegrid">
                 <img src="../images/celshadershowcase.GIF">
                 <img src="../images/grassgif.GIF">
@@ -114,10 +103,10 @@
         <br>
         <br>
         <div class="altimagegrid">
-                <p>Before 🔨</p>
+                <p>Before</p>
                 <img src="../images/BeforeShaders.webp">
                 <img src="../images/AfterShaders.webp">
-                <p>After 🏠</p>
+                <p>After</p>
         </div>
         <br>
         <br>
@@ -125,9 +114,9 @@
         <div class="altbodytext">
                 <h4>URP Shader Script</h4>
                 <p>
-                        Towards the end of production, personally I was not satisfied with the look of the game. 
-                        Collectively we wanted the game to have a more saturated, fluorescent childlike cartoon aesthetic. Considering this, 
-                        I’ve created an unlit shader script that modifies the Unity render pipeline (<b>URP</b>). 
+                        Towards the end of production, personally I was <b>not</b> satisfied with the look of the game.
+                        Collectively we wanted the game to have a more saturated, fluorescent childlike cartoon aesthetic. Considering this,
+                        I’ve created an unlit shader script that modifies the Unity render pipeline (<b>URP</b>).
                         Using Unity's built in HLSL shader scripting support.
                 </p>
                 <br>
@@ -136,8 +125,8 @@
                         <img src="../images/VFX.gif">
                 </div>
                 <p>
-                        Environment VFX using a combination of Unity’s built-in particle system, <b>HLSL</b> (High Level Shader Language), <b>OpenGL</b> 
-                        and <b>C#</b> 
+                        Environment VFX using a combination of Unity’s built-in particle system,
+                        <b>HLSL</b> (High Level Shader Language), and <b>C#</b>
                 </p>
                 <!-- BACK BUTTON -->
                 <hr>
@@ -150,5 +139,6 @@
                 <br>
         </div>
 
+        <script src="../background.js"></script>
         <script src="../script.js"></script>
 </body>
