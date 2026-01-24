@@ -161,7 +161,7 @@ class Constellation {
     );
     this.context = this.canvas.getContext("2d");
 
-    // Set canvas to transparent for overlay effect
+    // set canvas to transparent for overlay effect
     this.canvas.style.backgroundColor = "transparent";
     this.canvas.style.display = "block";
 
@@ -612,8 +612,8 @@ function plusOrMinus() {
   else return 1;
 }
 
-// Initialize constellation on page load
+// load constellation on page load
 window.addEventListener("DOMContentLoaded", function () {
-  // Using "Starry Night" preset with blue tones to match your site's aesthetic
+  // using "Midnight Purple" preset :)
   constellationPreset("constellation-bg", "Midnight Purple");
 });
