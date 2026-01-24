@@ -432,6 +432,17 @@ a:hover {
     font-size: 1.25em;
 }
 
+.altbodytext ul {
+    text-align: left;
+    display: inline-block;
+    margin: 10px auto;
+    padding-left: 20px;
+}
+
+.altbodytext li {
+    margin-bottom: 5px;
+}
+
 /* Stand Alone Image */
 
 .standaloneimage {
