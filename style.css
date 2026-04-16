@@ -485,6 +485,24 @@ a:hover {
     margin: auto 0;
 }
 
+/* victory laurel image  */
+.victorylaurel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.victorylaurel img {
+    max-width: 12em;
+    max-height: auto;
+}
+
+.victorylaurel:hover {
+    transform: scale(1.1);
+}
+
 /* TECHNICAL SKILLS SECTION */
 .skillsicons {
     display: flex;
