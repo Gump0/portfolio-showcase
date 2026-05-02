@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Standard HTML Config-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GLEB BELYAKOV</title>
+
+        <!-- Links and required references!-->
+        <!-- CSS STYLESHEETS-->
+        <link rel="stylesheet" href="../style.css" />
+        <!-- Scripts-->
+        <!-- Image References-->
+        <link rel="icon" type="image/png" href="icons/gb-icon.png" />
+    </head>
+
+    <!-- CONSTELLATION BACKGROUND -->
+    <div id="constellation-bg"></div>
+
+    <body>
+        <!-- KA24DE -->
+        <div id="altpagecontent" class="altcontent">
+            <div class="alttitle">
+                <h3><i>opengl-gltf-viewer</i></h3>
+            </div>
+            <div class="altbodytext">
+                <p>
+                    <b>MADE WITH</b>
+                </p>
+            </div>
+
+            <img src="../icons/cpplogo.png" alt="C#" class="icon" />
+            <img src="../icons/gitlogo.png" alt="Git" class="icon" />
+            <img src="../icons/OpenGL.png" alt="OpenGL" class="icon" />
+        </div>
+        <hr />
+        <a href="https://github.com/Gump0/opengl-gltf-viewer">
+            <div class="standaloneimage">
+                <img
+                    src="../images/opengl-gltf-viewer-cover-art.webp"
+                    style="width: 30rem"
+                />
+            </div>
+        </a>
+        <hr />
+        <br />
+
+        <div class="altbodytext">
+            <h3>
+                <a
+                    style="color: #b948ff"
+                    href="https://github.com/Gump0/opengl-gltf-viewer"
+                    target="_blank"
+                    >REPOSITORY</a
+                >.
+            </h3>
+
+            <p>
+                <i>opengl-gltf-viewer</i> is a lightweight gltf model viewer
+                built solely with C++17,
+                <a
+                    style="color: #b948ff"
+                    href="https://www.opengl.org/"
+                    target="_blank"
+                    >OpenGL</a
+                >,
+
+                <a
+                    style="color: #b948ff"
+                    href="https://www.glfw.org/"
+                    target="_blank"
+                    >glfw</a
+                >
+                and
+                <a
+                    style="color: #b948ff"
+                    href="https://github.com/ocornut/imgui"
+                    target="_blank"
+                    >ImGUI</a
+                >. With the purpose of learning the basics of 3D graphics,
+                shader scripting and how games load, render and texture 3D
+                models under the hood.
+            </p>
+            <br />
+            <p><b>The viewer supports the following:</b></p>
+
+            <br />
+
+            <ul>
+                <li>Load and render .gltf models</li>
+                <li>
+                    Point-light and ambient lighting simulation done with GLSL
+                    shader scripting
+                </li>
+                <li>Support for specular maps</li>
+                <li>ImGui-powered UI panel for scene manipulation</li>
+                <li>
+                    Supports loading textures and meshes (uv's, normals,
+                    vertices)
+                </li>
+                <li>First-person camera controls (orbit, pan)</li>
+            </ul>
+
+            <br />
+            <div class="altimagegrid">
+                <img src="../images/light-color-demo.gif" />
+                <img src="../images/light-shading-demo.gif" />
+            </div>
+            <br />
+
+            <hr />
+
+            <br />
+
+            <div class="button-container">
+                <a href="../index.html">
+                    <button class="content-button" data-content="backbutton">
+                        Back
+                    </button>
+                </a>
+            </div>
+            <br />
+            <script src="../script.js"></script>
+            <script src="../background.js"></script>
+        </div>
+    </body>
+</html>
