@@ -33,9 +33,9 @@
         </div>
         <hr />
 
-        <a href="https://github.com/Gump0/Infinite-Terrain-Generation-Demo">
+        <a href="https://github.com/Gump0/tinywagon">
         <div class="standaloneimage">
-            <img src="../images/screenshot1.webp">
+            <img src="../images/tinywagonbanner.webp">
         </div>
         
         </div>
@@ -44,56 +44,49 @@
 
         <div class="altbodytext">
 
-            <h3><a style="color: #B948FF;" href="https://github.com/Gump0/Infinite-Terrain-Generation-Demo">
+            <h3><a style="color: #B948FF;" href="https://github.com/Gump0/tinywagon">
                 REPOSITORY</a></h3>
-
+                
+                <!-- TODO FINISH UP THIS PAGE, INCLUDE LINKS, GRAMMER CHECK AND FORMAT. -->
             <p>
-                As part of a long-term project I’m developing, I created a
-                <b>fully procedural mesh-based world generation system</b>.
-                This system dynamically generates infinite biomes, varied
-                foliage, randomly placed structures, NPC spawns, and a
-                convincing 3D collision system. All working together to
-                bring the world to life!
+                "tinywagon" is a tiny, lightweight and easy-to-use game development framework
+                built to get a small project up and running as soon as possible! 
+                Built with OpenGL3.3 using C++23 standard.
             </p>
             <br />
 
             <div class="standaloneimage">
-                <img src="../images/screenshot0.webp" />
+                <img src="../images/2drenderer.gif" />
             </div>
 
             <p>
-                Taking inspiration from other games that feature procedural
-                generation. I've developed this algorithm with being
-                <b>seed-based</b> in mind. Meaning that if the correct number
-                value is stored, then the
-                <b>same world can be generated every time</b>. With this in
-                mind, we can create a living, breathing world. With a vast
-                variety of diverse landscapes, biomes, and generated structures.
-                <b>It's as simple as changing a few values!</b>
+                I built tinywagon with the purpose of further familiarizing myself with the OpenGL ecosystem. Personally, I've previously used a more established library called SFML, I was not a fan with how the library was designed. I often found myself writing a lot of boilerplate code. Then I switched to a library called Raylib, where I found the complete opposite. It was very simple, easy to use and very well documented.
             <br>
             <br>
-                To create convincing natural landscapes, this algorithm utilizes
-                layering
-                <a
-                    style="color: #b948ff"
-                    href="https://en.wikipedia.org/wiki/Perlin_noise"
-                    >perlin noise</a
-                >
-                and
-                <a
-                    style="color: #b948ff"
-                    href="https://en.wikipedia.org/wiki/Supersampling#Poisson_disk"
-                    >poisson disk sampling</a
-                >
-                to accomplish breathtaking landscapes that are different yet
-                <b>consistent</b> every time, along with foliage objects that are spread
-                out in a way that looks very organic.
+                From this, I was inspired to write and create my very own simple 2D game making framework from scratch! Where I took multiple design patterns from the Raylib library and applied to to my own rendering library.
             </p>
 
             <br>
 
+            <p><b>Library features:</b></p>
+            <ul>
+                <li>Simple implementations of several essential game systems</li>
+                <li>Render shapes of any color or texture you want (square, triangles)</li>
+                <li>Game camera system</li>
+                <li>Import, organize and automatically splice texture atlases</li>
+                <li>Easy implementation for custom shaders and GLSL code</li>
+                <li>Text rendering</li>
+                <li>Easily convert between screen-space and normalized coordinates (useful for game UI)</li>
+                <li>Various helper methods for each major core system</li>
+                <li>Built-in common math functions.</li>
+                <li>Super easy to implement into any OpenGL codebase! (copy tinywagon folder into root)</li>
+            </ul>
+
+            <br>
+            <br>
+
             <div class="standaloneimage">
-                <img src="../images/screenshot2.webp" />
+                <img src="../images/textrenderingdemo.webp" />
             </div>
 
             <hr />
