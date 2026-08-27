@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Standard HTML Config-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GLEB BELYAKOV</title>
+
+        <!-- Links and required references!-->
+        <!-- CSS STYLESHEETS-->
+        <link rel="stylesheet" href="../style.css" />
+        <!-- Image References-->
+        <link rel="icon" type="image/png" href="icons/gb-icon.png" />
+    </head>
+
+    <!-- CONSTELLATION BACKGROUND -->
+    <div id="constellation-bg"></div>
+
+    <body>
+        <!-- Infinite Terrain Generation Demo -->
+        <div id="altpagecontent" class="altcontent">
+            <div class="alttitle">
+                <h3><i>Infinite Terrain Generation Demo</i></h3>
+            </div>
+            <div class="altbodytext">
+                <p>
+                    <b>MADE WITH</b>
+                </p>
+            </div>
+            <img src="../icons/cslogo.png" alt="C#" class="icon" />
+            <img src="../icons/unitylogo.png" alt="Unity" class="icon" />
+            <img src="../icons/gitlogo.png" alt="Git" class="icon" />
+        </div>
+        <hr />
+
+        <a href="https://github.com/Gump0/Infinite-Terrain-Generation-Demo">
+        <div class="standaloneimage">
+            <img src="../images/screenshot1.webp">
+        </div>
+        
+        </div>
+        <hr />
+        <br />
+
+        <div class="altbodytext">
+
+            <h3><a style="color: #B948FF;" href="https://github.com/Gump0/Infinite-Terrain-Generation-Demo">
+                REPOSITORY</a></h3>
+
+            <p>
+                As part of a long-term project I’m developing, I created a fully <b>procedural,
+                threaded, mesh-based world generation system</b>. The system dynamically generates endless biomes,
+                different types of foliage, randomly placed structures, NPC spawns, and a 3D collision system.
+                All of these systems work together to create a world that feels alive. 
+            </p>
+            <br />
+
+            <div class="standaloneimage">
+                <img src="../images/screenshot0.webp" />
+            </div>
+
+            <p>
+                Taking inspiration from other games that use procedural generation,
+                I designed the system to be seed-based. This means that by saving the correct seed value,
+                the exact same world can be generated again every time. This allows for a large variety of
+                landscapes, biomes, foliage, and structures while still keeping each world consistent. It’s
+                also as simple as changing a few values to create completely different environments.
+            <br>
+            <br>
+                To create natural looking landscapes, the system uses layered
+                <a
+                    style="color: #b948ff"
+                    href="https://en.wikipedia.org/wiki/Perlin_noise"
+                    >Perlin noise</a
+                >
+                and
+                <a
+                    style="color: #b948ff"
+                    href="https://en.wikipedia.org/wiki/Supersampling#Poisson_disk"
+                    >Poisson disk sampling</a
+                >
+                These techniques help create terrain that feels varied and organic while still being consistent
+                from one to another. The foliage is also placed in a way that gives it natural spacing and variation,
+                rather than looking randomly scattered.
+            <br>
+            <br>
+                Overall, this system has allowed me to create large,
+                varied worlds that can be generated and explored in countless different ways.
+            </p>
+            <br>
+
+            <div class="standaloneimage">
+                <img src="../images/screenshot2.webp" />
+            </div>
+
+            <hr />
+            <br />
+
+            <div class="button-container">
+                <a href="../index.html">
+                    <button class="content-button" data-content="backbutton">
+                        Back
+                    </button>
+                </a>
+            </div>
+            <br />
+            <br />
+        </div>
+        <script src="../background.js"></script>
+        <script src="../script.js"></script>
+    </body>
+</html>

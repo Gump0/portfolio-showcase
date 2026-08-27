@@ -17,51 +17,50 @@
     <div id="constellation-bg"></div>
 
     <body>
-        <!-- Procedural World Generation Algorithm -->
+        <!-- Infinite Terrain Generation Demo -->
         <div id="altpagecontent" class="altcontent">
             <div class="alttitle">
-                <h3><i>Procedural World Generation Algorithm</i></h3>
+                <h3><i>tinywagon</i></h3>
             </div>
             <div class="altbodytext">
                 <p>
                     <b>MADE WITH</b>
                 </p>
             </div>
-
-            <img src="../icons/cslogo.png" alt="C#" class="icon" />
-            <img src="../icons/unitylogo.png" alt="Unity" class="icon" />
+            <img src="../icons/cpplogo.png" alt="C#" class="icon" />
+            <img src="../icons/OpenGL.png" alt="Unity" class="icon" />
             <img src="../icons/gitlogo.png" alt="Git" class="icon" />
         </div>
         <hr />
-        <div class="video-container">
-            <iframe
-                id="odysee-iframe"
-                src="https://odysee.com/$/embed/@Gump:2/IsometricWorldGen:f?r=Gt5FyuFKUcy7GaeeMdaRtyykZC1nNjP2"
-                allowfullscreen
-            >
-            </iframe>
+
+        <a href="https://github.com/Gump0/Infinite-Terrain-Generation-Demo">
+        <div class="standaloneimage">
+            <img src="../images/screenshot1.webp">
+        </div>
+        
         </div>
         <hr />
         <br />
 
         <div class="altbodytext">
-            <h3>⚠️ Currently In Development ⚠️</h3>
-            <h3><b>Summary :</b></h3>
+
+            <h3><a style="color: #B948FF;" href="https://github.com/Gump0/Infinite-Terrain-Generation-Demo">
+                REPOSITORY</a></h3>
+
             <p>
                 As part of a long-term project I’m developing, I created a
-                <b>fully procedural tile-based world generation system</b> for a
-                <b>2D isometric environment.</b>
+                <b>fully procedural mesh-based world generation system</b>.
                 This system dynamically generates infinite biomes, varied
                 foliage, randomly placed structures, NPC spawns, and a
-                convincing 3D-like collision system—all working together to
+                convincing 3D collision system. All working together to
                 bring the world to life!
             </p>
             <br />
 
-            <h4>Seed-Based Generation</h4>
             <div class="standaloneimage">
-                <img src="../images/isometricshowcase.GIF" />
+                <img src="../images/screenshot0.webp" />
             </div>
+
             <p>
                 Taking inspiration from other games that feature procedural
                 generation. I've developed this algorithm with being
@@ -71,6 +70,8 @@
                 mind, we can create a living, breathing world. With a vast
                 variety of diverse landscapes, biomes, and generated structures.
                 <b>It's as simple as changing a few values!</b>
+            <br>
+            <br>
                 To create convincing natural landscapes, this algorithm utilizes
                 layering
                 <a
@@ -78,9 +79,23 @@
                     href="https://en.wikipedia.org/wiki/Perlin_noise"
                     >perlin noise</a
                 >
+                and
+                <a
+                    style="color: #b948ff"
+                    href="https://en.wikipedia.org/wiki/Supersampling#Poisson_disk"
+                    >poisson disk sampling</a
+                >
                 to accomplish breathtaking landscapes that are different yet
-                <b>consistent</b> every time.
+                <b>consistent</b> every time, along with foliage objects that are spread
+                out in a way that looks very organic.
             </p>
+
+            <br>
+
+            <div class="standaloneimage">
+                <img src="../images/screenshot2.webp" />
+            </div>
+
             <hr />
             <br />
 
